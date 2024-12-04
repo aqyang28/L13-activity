@@ -24,9 +24,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Website vulnerability check
-        uses: lirantal/is-website-vulnerable-action@v1
+        uses: lirantal/is-website-vulnerable@main
         with:
-          url: "https://wikipedia.org"
+         scan-url: "https://wikipedia.org"
 
   deploy:
     environment:
